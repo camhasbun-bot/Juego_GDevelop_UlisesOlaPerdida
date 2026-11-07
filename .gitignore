@@ -1,0 +1,6 @@
+# Archivos temporales de GDevelop y del sistema
+*.autosave
+*.bak
+.DS_Store
+Thumbs.db
+desktop.ini
