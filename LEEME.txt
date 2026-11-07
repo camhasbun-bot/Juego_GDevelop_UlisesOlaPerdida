@@ -1,0 +1,42 @@
+ULISES Y LA OLA PERDIDA
+Videojuego en GDevelop 5 para la actividad "Desarrollando un videojuego"
+Taller de Programación de Videojuegos (800TP06), IPChile
+Autor: Carlos Muñoz Hasbun
+
+CÓMO ABRIRLO
+1. Descomprima la carpeta completa (no abra el archivo desde dentro del zip).
+2. En GDevelop 5: Abrir un proyecto > Mi computador y seleccione "Ulises y la Ola Perdida.json".
+3. Abra la escena 01_Menu y presione Vista previa.
+Las carpetas assets (imágenes), assets/audio (sonidos y música) y assets/video (cinemática) deben quedar junto al archivo .json.
+
+CONTROLES
+Flecha izquierda y derecha: mover a Ulises
+Espacio, Shift o flecha arriba: saltar
+E: hablar con la Pincoya         Enter: avanzar en menús y diálogos
+P: pausa                         Espacio (en la cinemática): saltar la escena
+
+HISTORIA
+Ulises, un surfista de Punta de Lobos (Pichilemu), es arrastrado por una ola extraña a una isla de fantasía.
+Debe ganar su tabla en el Nivel 1 y descender al templo sumergido del Nivel 2 para recuperar las runas
+y volver a casa.
+
+ESTRUCTURA (10 escenas, 2 niveles)
+01_Menu, 02_Instrucciones, 03_Intro, 04_Nivel1, 05_Transicion (video MP4), 06_Nivel2,
+07_Pausa, 08_GameOver, 09_Victoria, 10_Creditos.
+Cada nivel mide 6400 píxeles, es decir, 5 pantallas de 1280 px con fondos continuos (10 pantallas en total).
+
+QUÉ DEMUESTRA
+- Mundo de fantasía con fondos continuos, suelo y plataformas con mosaicos, capas (mundo y HUD).
+- Avatar con comportamiento Personaje de plataformas, animaciones (reposo, caminar, salto, tabla) y efecto espejo.
+- 3 tipos de NPC: Jaiba Centinela (patrulla entre topes invisibles), Lobo marino (persigue por radio y vuelve a su
+  punto de origen) y Pincoya (aliada: diálogo con la tecla E y entrega de la llave).
+- Interacción con el entorno: monedas, frutas (vitalidad), checkpoints, tabla de surf (cambia el movimiento a
+  deslizamiento), pinchos, puerta con llave, superficies de agua que solo se cruzan con la tabla (Ulises la usa únicamente sobre el agua; en arena, piedra y madera camina), portal de meta.
+- Mecánicas inspiradas en Montezuma's Revenge (llave, puerta, trampas), Wonder Boy (vitalidad que baja con el
+  tiempo, frutas, tabla) y Super Mario Bros. (pisotón y monedas). No se usa ningún sprite, nombre ni música de esos juegos.
+- Sonido: música distinta por escena, ambiente en bucle por nivel, pasos distintos según la superficie y efectos para cada acción.
+- Hojas de eventos organizadas en grupos con comentarios.
+
+RECURSOS
+Los gráficos, sonidos, música y el video de la transición fueron creados con apoyo de herramientas de IA.
+No se utilizaron recursos de repositorios externos ni de otros juegos.
